@@ -103,7 +103,7 @@ export default function Example() {
               <span className="sr-only">Gumball</span>
               <img
                 alt=""
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+                src={Pfp}
                 className="h-8 w-auto"
               />
             </a>
