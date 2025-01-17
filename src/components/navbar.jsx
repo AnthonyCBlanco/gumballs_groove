@@ -23,7 +23,7 @@ import Pfp from "../assets/crystalpfp.jpg"
 
 
 const socials = [
-  { name: 'Instagram,', description: 'Check Out My Lastest Work', href: '#', icon: AtSymbolIcon },
+  { name: 'Instagram', description: 'Check Out My Lastest Work', href: '#', icon: AtSymbolIcon },
   { name: 'Sound Cloud', description: 'Listen Now', href: '#', icon: SpeakerWaveIcon },
 ]
 
