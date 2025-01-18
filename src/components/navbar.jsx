@@ -23,8 +23,8 @@ import Pfp from "../assets/crystalpfp.jpg"
 
 
 const socials = [
-  { name: 'Instagram', description: 'Check Out My Lastest Work', href: '#', icon: AtSymbolIcon },
-  { name: 'Sound Cloud', description: 'Listen Now', href: '#', icon: SpeakerWaveIcon },
+  { name: 'Instagram', description: 'Check Out My Lastest Work', href: 'https://www.instagram.com/_lllabmug/?hl=en', icon: AtSymbolIcon },
+  { name: 'Sound Cloud', description: 'Listen Now', href: 'https://soundcloud.com/lllabmug', icon: SpeakerWaveIcon },
 ]
 
 export default function Example() {
@@ -34,7 +34,7 @@ export default function Example() {
     <header className="bg-white">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="https://soundcloud.com/lllabmug" className="-m-1.5 p-1.5">
             <span className="sr-only">GumBall</span>
             <img
               alt=""
