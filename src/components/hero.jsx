@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Banner from "../assets/bubble_gumm.jpg";
 import Listener from "./listening";
+import GumBall from "../assets/gumball.png";
 
 const Hero = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -19,7 +20,8 @@ const Hero = () => {
       className="pt-24"
     >
       <div className="flex items-center justify-center">
-        <p className="text-lg font-semibold mb-4">Check Out My Latest Mix</p>
+        <img
+          src={GumBall}></img>
       </div>
 
       <div className="flex items-center justify-center">
