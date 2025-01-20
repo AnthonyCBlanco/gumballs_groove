@@ -1,16 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {
-  Dialog,
-  DialogPanel,
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-  Popover,
-  PopoverButton,
-  PopoverGroup,
-  PopoverPanel,
-} from '@headlessui/react';
-import {
+  ArrowUpIcon,
+  ArrowDownIcon,
   Bars3Icon,
   AtSymbolIcon,
   SpeakerWaveIcon,
@@ -25,9 +16,9 @@ const socials = [
   { name: 'Sound Cloud', description: 'Listen Now', href: 'https://soundcloud.com/lllabmug', icon: SpeakerWaveIcon },
 ];
 
-export default function Example() {
+export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [showHeader, setShowHeader] = useState(true);
+  const [showHeader, setShowHeader] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,25 +35,9 @@ export default function Example() {
 
   return (
     <div>
-      <header className={`bg-white py-4 shadow-md ${showHeader ? 'translate-y-0' : '-translate-y-full'} transition-transform duration-300 fixed top-0 left-0 w-full z-10`}>
-        <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
+      <header className={`bg-white py-0.5 shadow-md rounded-b-3xl ${showHeader ? 'translate-y-0' : '-translate-y-2/3'} transition-transform duration-300 fixed top-0 left-1/2 transform -translate-x-1/2 w-50% z-10 `}>
+        <nav aria-label="Global" className="mx-auto flex flex-col max-w-7xl items-center justify-between p-4 lg:px-8">          
           <div className="flex lg:flex-1 justify-center">
-            <button
-              onClick={() => setShowHeader(!showHeader)}
-              className="flex items-center gap-x-1 text-sm font-semibold text-gray-900"
-            >
-              <Bars3Icon aria-hidden="true" className="size-6" />
-            </button>
-          </div>
-          <div className="flex lg:flex-1 justify-center">
-            <a href="https://soundcloud.com/lllabmug" className="-m-1.5 p-1.5">
-              <span className="sr-only">GumBall</span>
-              <img
-                alt=""
-                src={Pfp}
-                className="h-8 w-auto rounded-full ring-2 ring-white"
-              />
-            </a>
           </div>
           <div className="flex lg:flex-1 justify-center">
             {socials.map((item) => (
@@ -81,6 +56,26 @@ export default function Example() {
               </div>
             ))}
           </div>
+          {showHeader ? (
+            <div className="mt-4 flex justify-center">
+              <button
+                onClick={() => setShowHeader(!showHeader)}
+                className="flex items-center gap-x-1 text-sm font-semibold text-gray-900"
+              >
+                <ArrowUpIcon aria-hidden="true" className="size-6" />
+              </button>
+            </div>
+          ) : (
+            <div className="mt-4 flex justify-center">
+              <button
+                onClick={() => setShowHeader(true)}
+                className="flex items-center gap-x-1 text-sm font-semibold text-gray-900"
+              >
+                <ArrowDownIcon aria-hidden="true" className="size-6" />
+              </button>
+            </div>
+          )}
+
         </nav>
       </header>
       <div className={`hero-container transition-all duration-300 ${showHeader ? 'pt-20' : 'pt-0'}`}>

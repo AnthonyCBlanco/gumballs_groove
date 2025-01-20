@@ -16,13 +16,7 @@ const Hero = () => {
 
   return (
     <section
-      className="bg-pink-300 text-black p-4 rounded-lg shadow-md h-screen overflow-hidden relative isolate"
-      style={{
-        backgroundImage: `url(${Banner})`,
-        backgroundSize: "30% auto",
-        backgroundPosition: `calc(50% + ${scrollPosition * 0.5}px) calc(50% + ${scrollPosition * 0.5}px)`, // Adjust the transition speed by changing the multiplier
-        transition: "background-position 0.2s ease-in-out", // Adjust the transition duration and easing function as needed
-      }}
+      className="pt-24"
     >
       <div className="flex items-center justify-center">
         <p className="text-lg font-semibold mb-4">Check Out My Latest Mix</p>
