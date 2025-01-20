@@ -46,10 +46,10 @@ export default function Navbar() {
                 className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm font-semibold hover:bg-gray-50"
               >
                 <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                  <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-indigo-600" />
+                  <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-pink-400" />
                 </div>
                 <div className="flex-auto">
-                  <a href={item.href} className="text-gray-900 group-hover:text-indigo-600">
+                  <a href={item.href} className="text-gray-900 group-hover:text-pink-400">
                     {item.name}
                   </a>
                 </div>
