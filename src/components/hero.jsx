@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Listener from "./listening";
-import GumBall from "../assets/gumball.png";
+import GumBall from "../assets/GumBall.png";
 
 const Hero = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
