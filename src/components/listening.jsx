@@ -2,8 +2,10 @@ import React from "react";
 
 const Listener = () => {
   return (
-    <div className="flex flex-col items-center bg-pink-300 text-black p-4 rounded-lg shadow-md space-y-4 max-w-2xl mx-auto">
-      <iframe
+<div
+  className="flex flex-col items-center justify-center bg-pink-300 text-black p-4 rounded-lg shadow-md space-y-4 w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 2xl:w-1/3 mx-auto"
+>   
+<iframe
         className="w-full aspect-video rounded-lg"
         scrolling="no"
         frameBorder="no"
