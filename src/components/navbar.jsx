@@ -2,13 +2,9 @@ import React, { useState, useEffect } from 'react';
 import {
   ArrowUpIcon,
   ArrowDownIcon,
-  Bars3Icon,
   AtSymbolIcon,
   SpeakerWaveIcon,
-  XMarkIcon,
 } from '@heroicons/react/24/outline';
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
-import Pfp from "../assets/crystalpfp.jpg";
 import Hero from './hero';
 
 const socials = [

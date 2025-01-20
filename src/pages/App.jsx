@@ -1,8 +1,5 @@
 import React from "react"
-import Avatar from "../components/avatar.jsx"
-import Hero from "../components/hero.jsx"
 import Navbar from "../components/navbar.jsx"
-import Listener from "../components/listening.jsx"
 import Banner from "../assets/pink_gradiant.jpg";
 import { useEffect, useState } from "react";
 

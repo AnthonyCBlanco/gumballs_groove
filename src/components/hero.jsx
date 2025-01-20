@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Banner from "../assets/bubble_gumm.jpg";
 import Listener from "./listening";
 import GumBall from "../assets/gumball.png";
 
