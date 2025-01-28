@@ -75,7 +75,7 @@ export default function Navbar() {
         </nav>
       </header>
       <div className={`hero-container transition-all duration-300 ${showHeader ? 'pt-20' : 'pt-0'}`}>
-        <Hero />
+        
       </div>
     </div>
   );
